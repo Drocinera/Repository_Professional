@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "MoriaCitadel";
+    src: url(assets/fonts/MoriaCitadel.woff);
+    src: url(assets/fonts/MoriaCitadel.TTF) format("truetype");
+  }
+
+body {
+    background-image: url(assets/images/Magic-background.jpg) ;
+}
+
+* {
+    color: aliceblue;
+    font-family: "MoriaCitadel";
+}
+
+/* HEADER */
+
+.logoHeader {
+    width: 3em;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
