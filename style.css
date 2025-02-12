@@ -10,7 +10,23 @@ body {
 
 * {
     color: aliceblue;
-    font-family: "MoriaCitadel";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "MoriaCitadel", "sans-serif";
+}
+
+h1, h2 {
+    /*background-color: #b95120;*/
+    padding: 0.5em;
+    margin-bottom: 0em !important;
+    color: black;
+}
+
+h3 {
+    /*background-color: #bc4f3e;*/
+    padding: 0.5em;
+    color: #c8ad7f;
 }
 
 /* HEADER */
@@ -31,6 +47,38 @@ body {
 }
 
 /* Project */
+
+.scholarProjectTitle, .mainProjectTitle {
+    text-align: center;
+}
+
+.carousel-inner {
+    height: 55em;
+}
+
+.d-block  {
+    display: block;
+     width: 60%;
+     height: 45em;
+     margin: auto;    
+     background-color: white;
+}
+
+.carousel-caption {
+    bottom: -7.75rem !important; 
+}
+
+.carousel-indicators .active {
+    background-color: cyan !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: black;
+}
+
+h5 {
+    text-decoration: underline;
+}
 
 /* Contact */
 
