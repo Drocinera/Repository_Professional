@@ -8,6 +8,11 @@ body {
     background-image: url(assets/images/Magic-background.jpg) ;
 }
 
+header, footer {
+    background-image: url(assets/images/Nigh-sky.jpg);
+    background-size: contain;
+}
+
 * {
     color: aliceblue;
 }
@@ -35,9 +40,17 @@ h3 {
     width: 3em;
 }
 
+.nav-link{
+    color: rgb(13 110 253) !important;
+}
+
 .nav-link:hover {
     text-decoration: underline;
     text-decoration-color: red;
+}
+
+.navbar-toggler {
+    background-color: aliceblue !important;
 }
 
 /* Introduction */
