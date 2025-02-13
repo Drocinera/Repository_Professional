@@ -146,56 +146,45 @@
 
           <!-- Contact Form-->
           <div id="contact">
-            <form class="row g-3 needs-validation" novalidate>
+            <h2 class="contactTitle text-center">Formulaire de contact</h2>
+            <form class="contactForm row g-3">
                 <div class="col-md-4">
-                  <label for="validationCustom01" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                  <label for="formName" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="formName" placeholder="Le Gris" required>
                 </div>
                 <div class="col-md-4">
-                  <label for="validationCustom02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                  <label for="formLastName" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="formLastName" placeholder="Gandalf" required>
                 </div>
                 <div class="col-md-4">
-                  <label for="validationCustomMail" class="form-label">Mail</label>
+                  <label for="validationMail" class="form-label">Mail</label>
                   <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomMail" aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Please choose a username.
-                    </div>
+                    <input type="text" class="form-control" id="validationMail" aria-describedby="inputGroupPrepend" placeholder="magicien@legris.com" required>
                   </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <label for="formSubject" class="form-label">Sujet du message</label>
+                  <input type="text" class="form-control" id="formSubject" placeholder="Développer sa magie">
                 </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
+                <div class="mb-3">
+                  <label for="formMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="formMessage" rows="3"></textarea>
+                </div>
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                     <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
+                      J'accepte les termes et conditions
                     </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
+                  <button class="btn btn-primary" type="submit">Envoyer</button>
                 </div>
               </form>
+              <span class="top"></span>
+              <span class="bottom"></span>
           </div>
     </main>
 
