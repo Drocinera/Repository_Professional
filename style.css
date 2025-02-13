@@ -184,3 +184,30 @@ h5 {
   }
 
 /* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+
+}
+
+.socialLink, .linkedin, .github, .discord {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    transition: transform .2s;
+
+}
+
+.linkedin:hover, .github:hover, .discord:hover {
+    transform: scale(1.5);
+}
