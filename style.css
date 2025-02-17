@@ -6,6 +6,12 @@
 
 body {
     background-image: url(assets/images/Magic-background.jpg) ;
+    background-size: cover;
+}
+
+header, footer {
+    background-image: url(assets/images/Nigh-sky.jpg);
+    background-size: contain;
 }
 
 * {
@@ -35,22 +41,106 @@ h3 {
     width: 3em;
 }
 
+.nav-link{
+    color: rgb(13 110 253) !important;
+}
+
 .nav-link:hover {
     text-decoration: underline;
     text-decoration-color: red;
+}
+
+.navbar-toggler {
+    background-color: aliceblue !important;
 }
 
 /* Introduction */
 
 #introduction {
     text-align: center;
+    position: relative;
+    color: #fff;
+    background: transparent;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 255, 255, 0.5);
+    border-right: 1px solid rgba(0, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(160, 32, 240, 0.5);
+    border-left: 1px solid rgba(255, 255, 113, 0.5);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
 }
+
+.topIntro, .bottomIntro {
+  position: absolute;
+  border-radius: 100vmax;
+}
+
+.topIntro {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    transparent 50%,
+    rgba(255, 255, 255, 0.5),
+    rgb(0, 255, 255, 0.5)
+  );
+}
+
+.bottomIntro {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      rgb(160, 32, 240),
+      rgba(153, 104, 184, 0.5),
+      transparent 50%
+    );
+  }
+
+.topIntro {
+  animation: animateTop 3s ease-in-out infinite;
+}
+
+.bottomIntro {
+    animation: animateBottom 3s ease-in-out infinite;
+  }
 
 /* Project */
 
-.scholarProjectTitle, .mainProjectTitle {
-    text-align: center;
+ .projectList {
+  position: relative;
+  color: #fff;
+  background: transparent;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 113, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+ }
+
+ .scholarProjectTitle, .professionalProjectTitle, .personnalProjectTitle {
+  position: relative;
+  color: #fff;
+  background: transparent;
+  overflow: hidden;
+  border-top: 1px solid rgb(250, 179, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
 }
+
 
 .carousel-inner {
     height: 55em;
@@ -58,7 +148,7 @@ h3 {
 
 .d-block  {
     display: block;
-     width: 60%;
+     width: 70%;
      height: 45em;
      margin: auto;    
      background-color: white;
@@ -205,7 +295,10 @@ footer {
     display: flex;
     justify-content: center;
     transition: transform .2s;
+}
 
+.github, .discord {
+  background-color: white;
 }
 
 .linkedin:hover, .github:hover, .discord:hover {
