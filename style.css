@@ -176,12 +176,23 @@ h5 {
 .modal-header {
   background-image: url(assets/images/Nigh-sky.jpg);
   background-size: contain;
+  flex-direction: column;
 }
 
 .modal-body {
   background-image: url(assets/images/Magic-background.jpg) ;
   background-size: cover;
 }
+
+#modalDescription, #modalCreationDate, .titleExtraImages {
+  color: black;
+}
+
+.img-extra {
+  border-bottom: 7px solid rgb(255, 255, 255);
+  padding-bottom: 0.5em;
+}
+
 
 /* Contact */
 
