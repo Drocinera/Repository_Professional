@@ -170,6 +170,19 @@ h5 {
     text-decoration: underline;
 }
 
+/* Project Modal */
+/* CSS a ameliorer pour le modal*/
+
+.modal-header {
+  background-image: url(assets/images/Nigh-sky.jpg);
+  background-size: contain;
+}
+
+.modal-body {
+  background-image: url(assets/images/Magic-background.jpg) ;
+  background-size: cover;
+}
+
 /* Contact */
 
 #contact {

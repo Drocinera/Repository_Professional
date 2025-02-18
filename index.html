@@ -150,6 +150,28 @@
           <h3 class="personnalProjectTitle">Projets personnel</h3>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img id="modalImage" class="img-fluid mb-3" src="" alt="">
+                <p id="modalDescription"></p>
+                <p id="modalCreationDate"></p>
+                <div id="modalExtraImages" class="d-flex flex-column gap-2"></div>
+                <p id="modalTechnologie"></p>
+                <a id="modalLink" href="#" class="btn btn-primary mt-3" target="_blank">Voir le projet</a>
+                <a id="modalGithub" href="#" class="btn btn-primary mt-3" target="_blank">Voir le github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
           <!-- Contact Form-->
           <div id="contact">
             <h2 class="contactTitle text-center">Formulaire de contact</h2>
