@@ -162,6 +162,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/* Contact */
+
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("LXbwEnyXp05vVjBnT"); 
+
+  document.querySelector(".contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      let formData = {
+          name: document.getElementById("formName").value,
+          lastName: document.getElementById("formLastName").value,
+          email: document.getElementById("validationMail").value,
+          subject: document.getElementById("formSubject").value,
+          message: document.getElementById("formMessage").value
+      };
+
+      // Envoi du mail via EmailJS
+      emailjs.send("service_yz852dd", "template_t001ose", formData)
+          .then(function (response) {
+              alert("Votre message a bien été envoyé !");
+              document.querySelector(".contactForm").reset(); // Réinitialisation du formulaire
+          })
+          .catch(function (error) {
+              alert("Erreur lors de l'envoi du message. Veuillez réessayer.");
+              console.error("Erreur EmailJS :", error);
+          });
+  });
+});
+
+
 
 /* Footer */
 
